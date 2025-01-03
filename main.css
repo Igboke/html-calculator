@@ -1,0 +1,62 @@
+body{
+    
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+
+}
+#myInput{
+    width: 100%;
+    padding: 1px;
+    font-size: 5rem;
+    text-align: right;
+    border: none;
+    background-color: hsl(0, 0%, 35%);
+    color: white;
+}
+#buttons{
+    display: grid;
+    grid-template-columns: repeat(4,3fr); /* creating the grid nature of the calculator */
+    gap: 10px; /* gap between rows and columns*/
+    background-color: hsl(0, 2%, 12%);
+    padding: 35px; /* padding puts space between content and container*/
+
+}
+.operator{
+    background-color: hsl(35, 100%, 50%);
+}
+#calculator{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: hsl(0, 0%, 50%);
+
+}
+button:active{
+    background-color: hsl(0,0%,70%);
+}
+.operator:hover{
+    background-color: hsl(35, 100%, 70%);
+}
+.operator:active{
+    background-color: hsl(35, 100%, 80%);
+}
